@@ -1,0 +1,29 @@
+html{
+    background-color: rgb(212, 212, 178);
+}
+main{}
+header{
+    width: 960px;
+}
+nav{
+    background-color: blue;
+    color: white;
+    width: 960px;
+    justify-content: space-evenly;
+    padding: 10px;
+
+}
+
+a{
+    color: white;
+    font-size: large;
+    text-decoration: none;
+}
+.menu{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.card{
+    display: grid;
+}
