@@ -1,0 +1,29 @@
+header {
+    background-color: rgb(88, 78, 78);
+    padding: 10px;
+}
+.table{
+    background-color: rgb(2, 12, 12);
+    color: white;
+    display: flex;
+    padding: 15px;
+    justify-content: space-evenly;
+}
+main{
+    display: flex;
+    justify-content: space-evenly;
+}
+.one{
+    height: 300px;
+    width: 600px;
+    background-color: rgb(164, 157, 157);
+}
+.two{
+    height: 300px;
+    width: 250px;
+    background-color: rgb(238, 229, 229);
+}
+footer{
+    background-color: rgb(88, 78, 78);
+    padding: 30px;
+}
