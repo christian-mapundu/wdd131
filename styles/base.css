@@ -1,13 +1,36 @@
 html{
-    background-color: rgb(212, 212, 178);
+    background-color: white;
+    width: 960px;
 }
-main{}
+h1 {
+    color: white;
+    padding: 20px 2px;
+    text-align: center;
+    margin: 0 auto;
+    font-size: large;
+    background-color: rgb(28, 36, 84);
+}
+
+h2{
+    color: white;
+    text-align: center;
+    background-color: rgb(8, 14, 14);
+    margin: 0px;
+}
+span{
+    color: rgb(217, 224, 84);
+}
+main{
+    display: flex;
+    gap: 2px;
+
+}
 header{
     width: 960px;
 }
 nav{
-    background-color: blue;
-    color: white;
+    background-color: rgb(156, 148, 161);
+    color: rgb(2, 2, 2);
     width: 960px;
     justify-content: space-evenly;
     padding: 10px;
@@ -15,15 +38,48 @@ nav{
 }
 
 a{
-    color: white;
+    color: rgb(11, 8, 14);
     font-size: large;
     text-decoration: none;
 }
 .menu{
     display: flex;
     justify-content: space-evenly;
+    padding: 20px 3px 
+}
+.card{
+    margin-bottom: 10px;
 }
 
-.card{
-    display: grid;
+.card:first-of-type{
+    align-items: center;
+    flex: 2;
+    border-style: solid;
+    border-color: 1px black;
+    margin-top: 20px;
+    border-radius: 15px;
+
+}
+.card:last-of-type{
+    flex: 1;
+    border-style: solid;
+    border-color: 1px rgb(182, 175, 175);
+    margin-top: 20px;
+    border-radius: 15px;
+}
+ul{
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+footer{
+    background-color: rgb(28, 36, 84);
+    margin: 0 auto;
+    color: white;
+    padding: 10px;
+}
+img{
+    position: relative;
+}
+a:hover {
+    text-decoration: underline;
 }
