@@ -1,7 +1,6 @@
 html{
     background-color: white;
     width: 960px;
-    flex: wrap;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 h1 {
@@ -59,11 +58,8 @@ a{
 }
 
 .card:first-of-type{
-    /* align-items: flex-start; */
     flex: 2;
-    margin-right: 2cqh;
     border-style: solid;
-    /* border-color: 1px black; */
     margin-top: 20px;
     border-radius: 12px;
     text-align: start;
@@ -72,7 +68,7 @@ a{
     flex: 1;
     align-content: flex-end;
     border-style: solid;
-    border-color: 1px rgb(182, 175, 175);
+    /* border-color: 1px rgb(182, 175, 175); */
     margin-top: 20px;
     border-radius: 12px;
 }
@@ -98,13 +94,10 @@ p:last-of-type{
     text-align: center;
 }
 img:last-of-type{
-    /* flex-direction: row; */
     float: left;
     box-shadow: 3px 3px 7px 7px rebeccapurple;
     margin-left: 10px;
-    margin-right: 2cqb;
     border-bottom: 5px dotted yellow;
-    margin-bottom: 10px solid red;
 
 }
 img:first-of-type{
@@ -124,4 +117,5 @@ footer{
     margin: 0 auto;
     color: white;
     padding: 10px;
+    border-radius: 12px;
 }
