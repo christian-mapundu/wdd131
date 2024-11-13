@@ -1,6 +1,8 @@
 html{
     background-color: white;
     width: 960px;
+    flex: wrap;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 h1 {
     color: white;
@@ -14,7 +16,7 @@ h1 {
 h2{
     color: white;
     text-align: center;
-    background-color: rgb(8, 14, 14);
+    background-color: rgb(28, 36, 84);
     margin: 0px;
 }
 span{
@@ -41,6 +43,7 @@ a{
     color: rgb(11, 8, 14);
     font-size: large;
     text-decoration: none;
+    cursor: pointer;
 }
 .menu{
     display: flex;
@@ -49,37 +52,75 @@ a{
 }
 .card{
     margin-bottom: 10px;
+    margin-bottom: 10px;
+    position: relative;
+    background: rgb(211, 211, 211);
+
 }
 
 .card:first-of-type{
-    align-items: center;
+    /* align-items: flex-start; */
     flex: 2;
+    margin-right: 2cqh;
     border-style: solid;
-    border-color: 1px black;
+    /* border-color: 1px black; */
     margin-top: 20px;
-    border-radius: 15px;
-
+    border-radius: 12px;
+    text-align: start;
 }
 .card:last-of-type{
     flex: 1;
+    align-content: flex-end;
     border-style: solid;
     border-color: 1px rgb(182, 175, 175);
     margin-top: 20px;
-    border-radius: 15px;
+    border-radius: 12px;
 }
 ul{
     padding-top: 200px;
     padding-bottom: 200px;
+}
+h2{
+    padding: 5px;
+    text-decoration: none;
+}
+h3{
+    text-align: center;
+    padding-top: 10px;
+    border-bottom-width: 0.5px;
+    border-bottom: black;
+}
+
+p:first-of-type{
+    padding: 5px;
+}
+p:last-of-type{
+    text-align: center;
+}
+img:last-of-type{
+    /* flex-direction: row; */
+    float: left;
+    box-shadow: 3px 3px 7px 7px rebeccapurple;
+    margin-left: 10px;
+    margin-right: 2cqb;
+    border-bottom: 5px dotted yellow;
+    margin-bottom: 10px solid red;
+
+}
+img:first-of-type{
+    float: right;
+    box-shadow: 1px 1px 10px 11px rgb(24, 28, 29);
+    padding: 10px;
+    margin: 15px 15px 15px 15px;
+    /* margin-top: 5px; */
+    margin-left: 5px;
+}
+a:hover {
+    text-decoration: underline;
 }
 footer{
     background-color: rgb(28, 36, 84);
     margin: 0 auto;
     color: white;
     padding: 10px;
-}
-img{
-    position: relative;
-}
-a:hover {
-    text-decoration: underline;
 }
