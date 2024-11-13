@@ -120,6 +120,7 @@ a:hover {
 }
 footer{
     background-color: rgb(28, 36, 84);
+    text-align: center;
     margin: 0 auto;
     color: white;
     padding: 10px;
