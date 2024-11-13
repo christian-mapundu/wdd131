@@ -1,0 +1,9 @@
+@media{
+
+}
+nav{
+    display: flex;
+}
+a:hover{
+    color:gold;
+}
