@@ -1,0 +1,30 @@
+*{
+    width: 650px;
+    background: black;
+    color: white;
+}
+nav{
+    border: 1px solid rgb(15, 128, 0);
+    background: pink;
+    display: flex;
+    text-decoration: none;
+    justify-content: space-evenly;
+}
+a{
+    text-decoration: none;
+    font-size: large;
+}
+img{
+    float: left;
+    width: 200px;
+    margin: 20px;
+}
+section{
+    display: flex;
+    margin: 20px;
+}
+@media (min-width: 500px){
+    p{
+        color: rgb(187, 255, 0);
+    }
+}
