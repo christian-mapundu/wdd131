@@ -56,3 +56,18 @@ footer{
 span{
     color: navy;
 }
+#burger_menu::before{
+    content: "≡";
+}
+#burger_menu.open::before{
+    content: "X"
+}
+nav, a{
+    margin: 0;
+}
+nav{
+    text-align: center;
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+}

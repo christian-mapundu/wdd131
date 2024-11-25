@@ -1,9 +1,19 @@
-@media{
-
-}
-nav{
-    display: flex;
-}
-a:hover{
-    color:gold;
+@media screen and (min-width: 520px){
+    #burger_menu{
+        display: none;
+    }
+    nav{
+        display: flex;
+        position: initial;
+        flex-direction: row;
+    }
+    nav a{
+        display: block;
+    }
+    nav a.active{
+        color: #aaa;
+    }
+    a:hover{
+        color:gold;
+    }
 }
