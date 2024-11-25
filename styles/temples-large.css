@@ -4,6 +4,7 @@
     }
     nav{
         display: flex;
+        width: 80%;
         position: initial;
         flex-direction: row;
     }
