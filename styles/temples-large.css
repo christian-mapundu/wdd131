@@ -1,6 +1,6 @@
 @media screen and (min-width: 520px){
     #burger_menu{
-        display: none;
+        display: block;
     }
     nav{
         display: flex;
