@@ -5,7 +5,7 @@
     nav{
         /* display: flex; */
         width: 80%;
-        position: relative;
+        position: initial;
         flex-direction: row;
     }
     nav a{
