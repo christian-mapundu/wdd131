@@ -3,7 +3,7 @@
         display: block;
     }
     nav{
-        display: flex;
+        /* display: flex; */
         width: 80%;
         position: relative;
         flex-direction: row;

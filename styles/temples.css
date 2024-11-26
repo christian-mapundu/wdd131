@@ -1,9 +1,11 @@
 
 img{
     width: 200px;
+    border-radius: 15px;
 }
+
 h1{
-    float: left;
+    /* float: left; */
     display: block;
 }
 h2{
@@ -50,24 +52,45 @@ footer{
     background: #ffffef;
     border-radius: 4px;
     text-align: center;
-    /* color: blue; */
     border: 1px solid gray;
 }
 span{
     color: navy;
 }
+
 #burger_menu::before{
     content: "≡";
 }
 #burger_menu.open::before{
     content: "X"
 }
-nav, a{
-    margin: 0;
-}
-nav{
-    text-align: center;
+
+nav {
     display: flex;
-    position: fixed;
     flex-direction: column;
+    text-align: center;
+    /* position: fixed; */
+    top: 2.4em;
+    width: 12em;
+}
+
+nav a {
+    display: none;
+    text-decoration: none;
+}
+
+nav a.active {
+    color: #ffca38 ;
+    text-decoration: underline 2px;
+}
+
+nav a:hover {
+    background-color: white;
+    font-weight: 800;
+    border-radius: 0 0 .5em .5em;
+    
+}
+
+.open, .open a {
+    display: block;
 }
