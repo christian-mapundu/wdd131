@@ -1,25 +1,24 @@
-@media screen and (min-width: 960px){
+@media screen and (min-width: 500px){
     html{
         width: 500px;
     }
     h1{
         color: #fffeed;
         font-weight: bold;
-        font-family: Helvetica;
+        font-family: 'Helvetica';
         background: black;
     }
     h2{
         text-align: center;
     }
     img{
-        width: 250px;
+        width: 500px;
     }
     .first{
         position: relative;
     }
     .data p{
         color: red;
-
         position: relative;
         float: none;
 
