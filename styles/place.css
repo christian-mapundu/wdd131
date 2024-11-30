@@ -1,0 +1,47 @@
+html{
+    width: 960px;
+    font-family: 'Arial' Arial, Helvetica, sans-serif;
+    padding: 5px;
+}
+main{
+    display: grid;
+}
+h2{
+    background: turquoise;
+    margin: 0;
+    text-align: center;
+}
+h1{
+    color: #fff;
+    background: green;
+    padding: 20px;
+    border-bottom: 25px solid yellow;
+    margin-bottom: 0;
+}
+p{
+    
+}
+img{
+    width: 960px;
+}
+.first{
+    margin: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.data{
+    margin: 10px auto;
+    background: #dda;
+    width: 200px;
+    padding: 10px;
+    margin-top: 0;
+    float: left;
+}
+.weather{
+    background: #ffeeff;
+    float: right;
+    width: 200px;
+    padding: 10px;
+    margin-top: 0;
+}
