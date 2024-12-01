@@ -1,48 +1,103 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Christian Tawanda Mapundu">
-    <meta name="description" content="WDD131-Dynamic Web Fundamentals-Christian Tawanda Mapundu">
+    <title>WDD 131 - Salta</title>
+    <meta name="description" content="A page about the province of Salta in Argentina with weather and general information.">
+    <meta name="author" content="Santiago Ariel Chaparro">
+    <script src="scripts/getdates.js" defer></script>
     <script src="scripts/place.js" defer></script>
     <link rel="stylesheet" href="styles/place.css">
-    <link rel="stylesheet" href="styles/place_small.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sevillana&display=swap" rel="stylesheet">
-    <title>WDD131-Dynamic Web Fundamentals-Christian Tawanda Mapundu</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <h1>Zimbabwe</h1>
+        <h1>Mutare - Zimbabwe</h1>
     </header>
     <main>
         <picture>
-            <!-- <source srcset="images/hero_medium.webp" media="min-width: 1000px"> -->
-            <!-- <source srcset="images/hero_large.webp" media="min-width: 1000px"> -->
-            <img src="images/hero_large.webp" alt="pangolin">
+            <source media="(min-width: 1000px)" srcset="images/hero_large.webp">
+            <source media="(min-width: 500px )" srcset="images/hero_medium.webp">
+            <img src="images/Pangolin.webp" alt="A pangolin in a Rehabilitation center in Zim">
         </picture>
-        <div class="first">
-            <section class="data">
-                <h2>Data</h2>
-                <p>Area: XXXxXX</p>
-                <p><strong>Population:</strong> XXXXXXX</p>
-                <p><strong>Capital:</strong> XXXXXXXXX</p>
-                <p><strong>Languages:</strong>Shona, Nbebele, English</p>
-                <p><strong>Currency:</strong> Zimbawe Gold</p>
-                <p><strong>Time Zone:</strong> CAT +2</p>
-                <p><strong>Calling Code:</strong> +263</p>
-                <p><strong>Internet TLD:</strong> .mg</p>
-            </section>
-            <section class="weather">
-                <h2>Weather</h2>
-            </section>    
-        </div>
+        <section class="card data">
+            <h2>Data</h2>
+            <table>
+                <tr>
+                    <th>Country:</th>
+                    <td>Zimbabwe</td>
+                </tr>
+                <tr>
+                    <th>Area:</th>
+                    <td>390,580 km²</td>
+                </tr>
+                <tr>
+                    <th>Population:</th>
+                    <td>16,764,909 (2024)</td>
+                </tr>
+                <tr>
+                    <th>Country:</th>
+                    <td>Zimbabe</td>
+                </tr>
+                <tr>
+                    <th>Capital:</th>
+                    <td>Harare</td>
+                </tr>
+                <tr>
+                    <th>Languages:</th>
+                    <td>Shona, Ndebele, English</td>
+                </tr>
+                <tr>
+                    <th>Currency:</th>
+                    <td>Zimbabwe Gold</td>
+                </tr>
+                <tr>
+                    <th>Time Zone:</th>
+                    <td>CAT +2</td>
+                </tr>
+                <tr>
+                    <th>Calling Code:</th>
+                    <td>+263</td>
+                </tr>
+            </table>
+            <!--
+            <p><strong>Languages: </strong>Shona, English, Ndebele</p>
+            <p><strong>Currency: </strong>Zimbabwe Gold</p>
+            <p><strong>Time Zone: </strong>CAT +2</p>
+            <p><strong>Calling Code: </strong> +263</p> -->
+
+            <!-- After doing some research I realised there was another method
+             of doing the same thing other than using the paragraph and strong element elements -->
+        </section>
+        <section class="temp">
+            <h2>Weather</h2>
+            <img src="images/weather_icon.svg" alt="Sun_Icon" width="100">
+            <table>
+                <tr>
+                    <th>Temperature:</th>
+                    <td><span id="current-temp">32</span>&deg; C</td>
+                </tr>
+                <tr>
+                    <th>Conditions:</th>
+                    <td>Sunny</td>
+                </tr>
+                <tr>
+                    <th>Wind:</th>
+                    <td><span id="windspeed">13</span> km/h</td>
+                </tr>
+                <tr>
+                    <th>Windchill:</th>
+                    <td><span id="windchill"></span></td>
+                </tr>
+            </table>
+        </section>
     </main>
     <footer>
-        <p>©️ 2024 Christian Tawanda Mapundu, Manicaland, Zimbabwe</p>
-        <p id="lastModified"><span id="currentyear"></span></p>
+        <p>&copy;<span id="currentyear"></span> | Christian Tawanda Mapundu | Mutare, Zimbabwe</p>
+        <p id="lastModified"></p>
     </footer>
 </body>
 </html>
