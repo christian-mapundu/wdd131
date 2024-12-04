@@ -1,0 +1,38 @@
+th:first-of-type{
+    font-size: x-large;
+    border: 1px solid rgb(85, 250, 35);
+}
+td, th{
+    padding: 20px 20px;
+    /* border: 1px solid black */
+
+}
+table{
+    border-collapse: collapse;
+    text-align:justify;
+    border-top: none;
+    box-shadow: 0 0 10px rgb(4, 14, 2);
+}
+th:nth-child(odd){
+    background: rgb(252, 248, 248);
+}
+tr{
+    background: rgb(243, 243, 209);
+    border: none;
+}
+.first, .second, .third{
+    
+}
+td:nth-child(odd){
+    background: pink;
+}
+td:nth-child(even){
+    background: turquoise;
+}
+caption{
+    caption-side: bottom;
+    font-weight: bolder;
+    padding: 10px 20px 10px 150px;
+    margin-top: 20px;
+
+}
