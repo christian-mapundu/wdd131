@@ -1,0 +1,62 @@
+h1{
+    color: #ffefff;
+    background: rgb(22, 53, 22);
+    padding: 20px;
+    position: relative;
+    margin: 0;
+    padding: 50px;
+}
+li, a{
+    list-style: none;
+    text-decoration: none;
+    font-size: medium;
+    color: red;
+}
+a:hover{
+    color: gold;
+}
+img{
+    margin: 0 auto;
+    width: 500px;
+    height: 250px;
+    position: relative;
+}
+ul{
+    display: flex;
+    justify-content: space-around;
+    background: #dbfffd;
+    padding: 10px;
+}
+.hero{
+
+}
+.vision{
+    position: absolute;
+    background: black;
+    color: white;
+}
+.history{
+    
+}
+section{
+    display: grid;
+}
+@media screen and (max-width: 500px){
+    html{
+        width: 500px;
+    }
+    h1{
+        color: black;
+        background: #fff;
+    }
+    .departments{
+        color: purple;
+        display: grid;
+    }
+    ul{
+        display: grid;
+    }
+    header::after{
+        content: "≡";
+    }
+}
