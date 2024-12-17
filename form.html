@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sevillana&display=swap" rel="stylesheet">
+  <meta name="author" content="Christian Tawanda Mapundu">
+  <title>Product Review Form</title>
+  <meta name="author" content="Christian Tawanda Mapundu">
+  <meta name="description" content="Product Review form - Dynamic web fundamentals">
+  <link rel="stylesheet" href="styles/form.css">
+  <script src="scripts/form.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Product Review</h1>
+    <form>
+      <label for="product-name">Product Name</label>
+      <select id="product-name" name="product-name">
+        <option id="product-name" value="">Choose a Product ...</option>
+      </select>
+
+      <label for="rating">Overall Rating</label>
+      <div id="rating" class="rating">
+        <input type="radio" name="rating" value="1"> ★
+        <input type="radio" name="rating" value="2"> ★★
+        <input type="radio" name="rating" value="3"> ★★★
+        <input type="radio" name="rating" value="4"> ★★★★
+        <input type="radio" name="rating" value="5"> ★★★★★
+      </div>
+
+      <label for="installation-date">Date of Installation</label>
+      <input type="date" id="installation-date" name="installation-date">
+
+      <label>Which features did you find useful in the product? (Check all that apply)</label>
+      <div class="features">
+        <input type="checkbox" id="durability" name="features" value="durability">
+        <label for="durability">Durability</label>
+        <input type="checkbox" id="ease-of-use" name="features" value="ease-of-use">
+        <label for="ease-of-use">Ease of Use</label>
+        <input type="checkbox" id="performance" name="features" value="performance">
+        <label for="performance">Performance</label>
+        <input type="checkbox" id="design" name="features" value="design">
+        <label for="design">Design</label>
+      </div>
+
+      <label for="written-review">Written Review (Optional)</label>
+      <textarea id="written-review" name="written-review"></textarea>
+
+      <label for="name">Your Name (Optional)</label>
+      <input type="text" id="name" name="name">
+
+      <button type="submit">Post Review</button>
+    </form>
+    <footer>
+      <p>©2024 Christian Tawanda Mapundu - Mutare, Zimbabwe</p>
+      <p><p id="lastModified"><span id="currentyear"></span></p></p>
+    </footer>
+  </div>
+</body>
+</html>
