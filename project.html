@@ -3,49 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sevillana&display=swap" rel="stylesheet">
-    <meta name="author" content="Christian Tawanda Mapundu">
-    <meta name="description" content="WDD131 Dynamic Web Fundamentals-Christian Tawanda Mapundu">
+    <title>Project.hold</title>
+    <script src="scripts/main.js" defer></script>
     <link rel="stylesheet" href="styles/main.css">
-    <script src="scripts/project.js"></script>
-    <title>WDD131 Dynamic Web Fundamentals-Christian Tawanda Mapundu</title>
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Activities</a></li>
-                <li><a href="registration.html">Register</a></li>
-            </ul>
+        <h1>Welcome to Cross Power Institute</h1>
+        <nav id="container">
+            <a href="">Home</a>
+            <a href="">Contact Us</a>
+            <a href="">Registration</a>
+            <a href="">About</a>
         </nav>
     </header>
     <main>
-        <section class="hero">
-            <h1>Welcome to Cross Power Institute</h1>
-            <img src="images/school.webp" alt="Cross Power Institute">
+        <Section id="first">
+            <h2>History</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio dolor praesentium maxime mollitia ipsam commodi optio, cum sunt recusandae maiores consequuntur hic, nostrum modi vero laboriosam impedit fuga! Dolorem harum iusto eius voluptatem tenetur maxime illo repellat sequi aut amet earum tempore vel totam, sapiente ut! Itaque a neque iusto.</p>
+        </Section>
+        <section id="second">
+            <h2>Vision</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae inventore obcaecati quas sapiente ipsa aspernatur, cumque cupiditate omnis magnam, illum expedita necessitatibus sint illo? Incidunt quam quisquam odit vero commodi maiores doloremque amet voluptates
+               ab? Amet fugiat deserunt eos illo! Debitis natus ratione harum mollitia, architecto aliquid delectus aspernatur dignissimos.</p>
+            <img src="images/student-sport.webp" alt="Happy-Students">
         </section>
-        <section class="vision">
-            <h2>Our Vision</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
+        <section id="third">
+            <h2>Expectations</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae quibusdam alias nihil ipsum iusto, dolorum impedit, hic perferendis sint aliquid magni, totam delectus quis quod ipsa? Voluptates eum voluptatem dignissimos nemo corrupti dolor sequi sapiente et iusto, qui nam ratione aliquid facere beatae eveniet, assumenda vero, itaque enim! Sint, molestias!</p>
+            <img src="images/student-classes.webp" alt="Happy-Students" loading="lazy">
         </section>
-        <section class="history">
-            <h2>Our History</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
-        </section>
-        <section class="departments">
-            <h2>Our Departments</h2>
-            <ul>
-            <li>Ordinary Level (Secondary)</li>
-            <li>Advanced Level (High School)</li>
-            </ul>
-        </section>
+        <button id="contact">Contact Us</button>
+        <table>
+            <caption> Available Classes</caption>
+            <tr>
+              <th>Ordinary Level</th>
+              <th>Advanced Level</th>
+            </tr>
+            <tr>
+              <td>
+                <ul>
+                  <li>English</li>
+                  <li>Combined Science</li>
+                  <li>Mathematics</li>
+                  <li>Family and Religious Studies</li>
+                  <li>Basic Accounting</li>
+                  <li>Shona language</li>
+                  <li>Business/Commerce</li>
+                  <li>History</li>
+                </ul>
+              </td>
+              <td>
+                <ul>
+                  <li>English</li>
+                  <li>Combined Science</li>
+                  <li>Mathematics</li>
+                  <li>Family and Religious Studies</li>
+                  <li>Basic Accounting</li>
+                  <li>Shona language</li>
+                  <li>Business/Commerce</li>
+                  <li>History</li>
+                </ul>
+              </td>
+            </tr>
+        </table>
     </main>
-        <footer>
-            <p>&copy; 2024 Cross Power Institute</p>
-        </footer>
-</body>
-</html>
+    <footer>
+        <p>©2024 Christian Tawanda Mapundu - Mutare, Zimbabwe</p>
+        <p id="lastModified"><span id="currentyear"></span></p>
+    </footer>
