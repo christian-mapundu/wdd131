@@ -22,14 +22,28 @@
         <option id="products" value="">Choose a Product ...</option>
       </select>
 
-      <label for="rating">Overall Rating</label>
-      <div id="rating" class="rating">
-        <input type="radio" id="rating" name="rating" value="1"> ★
-        <input type="radio" id="rating" name="rating" value="2"> ★★
-        <input type="radio" id="rating" name="rating" value="3"> ★★★
-        <input type="radio" id="rating" name="rating" value="4"> ★★★★
-        <input type="radio" id="rating" name="rating" value="5"> ★★★★★
-      </div>
+      <div class="rating">
+        <label>
+          <input type="radio" name="overall_rating" id="rating_1" value="1" required>
+          <span>☆</span>
+        </label>
+        <label>
+          <input type="radio" name="overall_rating" id="rating_2" value="2" required>
+          <span>☆</span>
+        </label>
+        <label>
+          <input type="radio" name="overall_rating" id="rating_3" value="3" required>
+          <span>☆</span>
+        </label>
+        <label>
+          <input type="radio" name="overall_rating" id="rating_4" value="4" required>
+          <span>☆</span>
+        </label>
+        <label>
+          <input type="radio" name="overall_rating" id="rating_5" value="5" required>
+          <span>☆</span>
+        </label>
+      </div>      
 
       <label for="installation-date">Date of Installation</label>
       <input type="date" id="installation-date" name="installation-date">
