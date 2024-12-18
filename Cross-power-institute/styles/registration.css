@@ -1,9 +1,11 @@
 /* Basic styles */
 body {
     font-family: sans-serif;
-    margin: 2rem;
+    
 }
-
+main{
+    padding: 10px;
+}
 h1 {
     text-align: center;
     margin-bottom: 1rem;
