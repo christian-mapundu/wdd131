@@ -1,4 +1,4 @@
-#information{
+/* #information{
     margin-top: 20px;
     align-items: center;
     padding: 10px;
@@ -7,6 +7,7 @@
 main{
     background: #ffe;
     display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 #phone, #email:nth-child(even), #address{
     margin: 0 auto;
@@ -18,20 +19,26 @@ h2{
 }
 #form{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns:1fr 1fr;
 
 }
 form{
     padding: 10px;
     /* text-align: center; */
-}
+/* } */
 label, input{
     padding: 10px;
     margin: 10px;
 }
+img{
+    width: 50px;
+    padding-left: 50%;
+    padding-right: 50%;
+}
 #message{
     text-align: center;
     padding-top: 10px;
+    margin-top: 60px;
 }
 @media screen and (max-width: 719.37px) {
     body{
@@ -39,28 +46,35 @@ label, input{
         margin: 0;
         width: 500.37px;
     }
-    p{
-
-    }
     main{
         display: grid;
-        grid-template-rows:  1fr;
+        grid-template-rows: ;
         background: #ffe;
+    }
+    #form{
+        background: rgb(243, 243, 247);
+        display: grid;
+        grid-template-columns: 1fr;
     }
     #information{
         display: grid;
-        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
     }
     #phone, #email:nth-child(even), #address{
         margin: 0 auto;
         padding: 10px;
     }
+    img{
+        width: 50px;
+        padding-left: 40%;
+        padding-right: 20%;
+    }
     form{
         align-items: center;
     }
     button{
-        width: 80px;
-        margin: 0 auto;
+        width: 100px;
+        margin-left: 20px;  
         background: rgb(184, 30, 137);
         color: #fff;
         margin: 0 auto;
@@ -68,4 +82,101 @@ label, input{
     footer{
         background: grey;
     }
+} */
+
+
+/* Global Styles */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f9f9f9;
+}
+
+/* Layout */
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: #fff;
+  padding: 20px;
+}
+
+/* Information Section */
+
+.info-section {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #f7f7f7;
+}
+
+.info-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.info-section li {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+/* Form Section */
+
+.form-section {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 20px;
+}
+
+.form {
+  padding: 10px;
+}
+
+label, input {
+  display: block;
+  padding: 10px;
+  margin: 10px;
+}
+
+button[type="submit"] {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #3e8e41;
+}
+
+/* Responsive Design */
+
+@media screen and (max-width: 768px) {
+  main {
+    grid-template-columns: 1fr;
+  }
+  .form-section {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .info-section {
+    padding: 10px;
+  }
+  .form-section {
+    padding: 10px;
+  }
+}
+
+

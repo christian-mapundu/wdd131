@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project.hold</title>
+    <script src="scripts/registration.js" defer></script>
     <script src="scripts/main.js" defer></script>
     <link rel="stylesheet" href="styles/main.css">
 </head>
@@ -17,39 +18,35 @@
         </nav>
     </header>
     <main>
-        <table>
-            <caption> Available Classes</caption>
-            <tr>
-              <th>Ordinary Level</th>
-              <th>Advanced Level</th>
-            </tr>
-            <tr>
-              <td>
-                <ul>
-                  <li>English</li>
-                  <li>Combined Science</li>
-                  <li>Mathematics</li>
-                  <li>Family and Religious Studies</li>
-                  <li>Basic Accounting</li>
-                  <li>Shona language</li>
-                  <li>Business/Commerce</li>
-                  <li>History</li>
-                </ul>
-              </td>
-              <td>
-                <ul>
-                  <li>English</li>
-                  <li>Combined Science</li>
-                  <li>Mathematics</li>
-                  <li>Family and Religious Studies</li>
-                  <li>Basic Accounting</li>
-                  <li>Shona language</li>
-                  <li>Business/Commerce</li>
-                  <li>History</li>
-                </ul>
-              </td>
-            </tr>
-        </table>
+      <h1>Student Registration</h1>
+      <form id="infoForm">
+        <label for="firstName">First Name:</label><br>
+        <input type="text" id="firstName" name="firstName" required><br><br>
+      
+        <label for="middleName">Middle Name:</label><br>
+        <input type="text" id="middleName" name="middleName"><br><br>
+      
+        <label for="lastName">Last Name:</label><br>
+        <input type="text" id="lastName" name="lastName" required><br><br>
+      
+        <label for="age">Age:</label><br>
+        <input type="number" id="age" name="age" required><br><br>
+      
+        <label>Preferred Field of Study:</label><br>
+        <input type="radio" id="commercials" name="fieldOfStudy" value="commercials" required>
+        <label for="commercials">Commercials</label><br>
+        <input type="radio" id="arts" name="fieldOfStudy" value="arts">
+        <label for="arts">Arts</label><br>
+        <input type="radio" id="scientific" name="fieldOfStudy" value="scientific">
+        <label for="scientific">Scientific</label><br><br>
+      
+        <div id="subjectList">
+          <h2>Select Subjects:</h2>
+          <ul id="subjects"></ul>
+        </div>
+      
+        <button type="button" onclick="register()">Register</button>
+      </form>
     </main>
     <footer>
         <p>©2024 Christian Tawanda Mapundu - Mutare, Zimbabwe</p>
